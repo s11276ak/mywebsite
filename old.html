@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>沖縄市の歴史 The History of Okinawa City</title>
+      <meta name="description" content="アメリカだった沖縄市の写真が語る、チャンプルー文化の足跡を今に伝える空間。">
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+      <script>
+        jQuery.easing.quart = function (x, t, b, c, d) {
+          return -c * ((t=t/d-1)*t*t*t - 1) + b;
+      };
+      $(function(){
+    jQuery('.scroll').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var $target = jQuery(this.hash);
+            $target = $target.length && $target || jQuery('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+            var targetOffset = $target.offset().top;
+            jQuery('html,body').animate({ scrollTop: targetOffset }, 1200, 'quart');
+            return false;
+            }
+        }
+        $('a img').hover(function(){
+        $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+    }, function(){
+        if (!$(this).hasClass('currentPage')) {
+        $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+        }
+    });
+    });
+});
+  </script>
+    <!-- TODO: cssファイルを作る -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+  </head>
+  <body>
+    <!-- TODO: ここにかいていく -->
+      <h1>沖縄市の歴史</h1>
+      <h2>The History of Okinawa City</h2>
+      <ul>
+      <li><a href="#first" class="scroll">沖縄市のなりたち</a></li>
+        <li><a href="#second" class="scroll">沖縄市の沖縄戦</a></li>
+        <li><a href="#third" class="scroll">沖縄市の戦後</a></li>
+        <li><a href="#forth" class="scroll">おわりに</a></li>
+      </ul>
+      <h3 id="first">沖縄市のなりたち</h3>
+      <p>1974(昭和49)年4月1日、沖縄市はコザ市と美里村の対等合併により誕生した。</p>
+      <p>1666年4月23日、当時の越来間切から美里間切が分離・独立し、以後、両間切は別々の間切として存続していた。</p>
+      <p>1908(明治41)年4月1日、「沖縄県及島嶼町村制」が布かれ、越来間切は越来村に、美里間切が美里村にそれぞれ名称変更された。</p>
+      <p>沖縄戦を経て1950年代の基地建設に伴い、嘉手納飛行場に隣接する越来村は基地経済に支えられながら急激に都市化し1956(昭和31)年6月13日にコザ村と名称を変更し、同年7月1日にコザ市に昇格した。</p>
+      <p>一方、美里村は1945(昭和20)年9月26日、北部の6地域が石川市(現・うるま市)に分離された。</p>
+      <p>1666年の間切の分離以来、実に308年ぶりの合併で、県内では初めて日本本土の「地方自治法」が適用された事例でした。</p>
+      <p>※1…間切は今の市町村に相当する。</p>
+      
+      <a href="003281.JPG"><img src="003264.JPG" alt="ボタン" /></a> 
+      <p>1963年頃のセンター通り(現・中央パークアベニュー)</p>
+      <h3 id="second">沖縄市の沖縄戦</h3>
+      <p>～～～</p>
+      <h3 id="third">沖縄市の戦後</h3>
+      <p>～～～</p>
+      <h3 id="forth">おわりに</h3>
+      <p>～～～</p>
+      <img src="cafe.JPG">
+      <P>スイーツづくり(要変更)</p>
+      <img src="cake.jpg">
+      <p>一言</p>
+      <p>面白くない大阪人です。(要変更)</p>
+      
+  </body>
+</html>

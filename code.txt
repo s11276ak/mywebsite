@@ -1,0 +1,6 @@
+      <ul id="menu">
+        <li><a href="origin.html">‰«“êŽs‚Ì‚È‚è‚½‚¿</a></li>
+        <li><a href="thebattleofokinawa.html">‰«“êŽs‚Ì‰«“êí</a></li>
+        <li><a href="postwar.html">‰«“êŽs‚ÌíŒã</a></li>
+        <li><a href="finally.html">‚¨‚í‚è‚É</a></li>
+        </ul>
